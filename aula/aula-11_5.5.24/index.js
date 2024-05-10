@@ -3,8 +3,8 @@
 // import OpenAI from "openai";
 
 //     const openai = new OpenAI({
-//         organization: "org-sWkbP85KoTzR03UrcxtFsRfm",
-//         apiKey: "vsk-proj-ceoHGD4z1S6yZuDhiwknT3BlbkFJtRbEPT5qZQ8I3n4RU8cO",
+//         organization: "",
+//         apiKey: "",
 //     })
 
 //     const chatCompletion = await openai.chat.completions.create({
