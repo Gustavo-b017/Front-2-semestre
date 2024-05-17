@@ -77,7 +77,26 @@
                     messages
                 })
             })
+
+            .then(res => res.json())
+            
+            .then(data => {
+                console.log(data)
+                let newAssistantMessage = {'rolw': 'assistant', 'constent': `${data.chat_completion.message.constent}`}
+
+                message.push(newAssistantMessage);
+
+                messageElementDiv.classList.add('message');
+                messageElementDiv.classList.add('message--received')
+                messageElementDiv.innerHTML = `
+                    <div class="message__text"> ${data.chat_completion.message.constent} </div>
+                `;
+
+                chatLog.appendChild(messageElementDiv);
+            })
         });
+
+        
 
         
 
